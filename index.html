@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+<title>Solarium</title>
+    
+<!-- THIS IS THE FAVORITE ICON THAT SHOWS ON THE BROWSER TITLE BAR -->
+<link rel="shortcut icon" href="../Solarium/images/logo.png" type="image/x-icon">
+<link rel="icon" href="../Solarium/images/logo.png" type="image/x-icon">
+
+<!--  FONT AWESOME -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+<!--WOW animate-->
+<link rel="stylesheet" href="../Solarium/css/animate.css">
+    
+<!-- ANIMATE CSS CDN FOR ALL THE ANIMATION FEATURES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+<!--FONTS-->    
+<link href="https://fonts.googleapis.com/css?family=Anton|Nova+Flat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+<header>
+<h1 class="solarium animated fadeInRightBig">Solarium</h1>
+</header>
+<nav>
+<ul>
+<li class="active animated fadeInUp"><a href="index.html">Calculator</a></li>
+<li class="product animated fadeInUp"><a href="http://www.governmentsolarchecker.com/?campaign=Solargn&adgroup=solarpower&source=adwords&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3WNjCvqydMhi0RrvTSNiAcEWReFJb3qOeLml1liQQCARJbTDfiiUMaAjqCEALw_wcB">Products</a></li>
+<li class="blog animated fadeInUp"><a href="https://www.solarpowerportal.co.uk/blogs/list">Blog</a></li>
+<li class="average animated fadeInUp"><a href="https://en.wikipedia.org/wiki/Climate_of_the_United_Kingdom">Average Sun Checker</a></li>
+</ul>
+<div class="keepOpen"></div>
+</nav>
+    
+<main>
+<h1>Calculator</h1>
+<form name="solarForm" action="" method="post">
+<fieldset id="mpc"><legend>Monthly Power Consumption</legend>
+<figure><img id="bulb-image" src="images/light-bulb-.jpg" alt="zone map"></figure>
+<p>In order to accuratly calculate your solar needs, we need to know how much power you use. Please enter the last 12 months of electrical usage below.</p>
+	<label><span>January</span><input name="jan" type="number" value="1028">kWh</label>
+	<label><span>February</span><input name="feb" type="number" value="760">kWh</label>
+	<label><span>March</span><input name="mar" type="number" value="762">kWh</label>
+	<label><span>April</span><input name="apr" type="number" value="766">kWh</label>
+	<label><span>May</span><input name="may" type="number" value="579">kWh</label>
+	<label><span>June</span><input name="jun" type="number" value="695">kWh</label>
+	<label><span>July</span><input name="jul" type="number" value="1015">kWh</label>
+	<label><span>August</span><input name="aug" type="number" value="1216">kWh</label>
+	<label><span>September</span><input name="sep" type="number" value="1033">kWh</label>
+	<label><span>October</span><input name="oct" type="number" value="769">kWh</label>
+	<label><span>November</span><input name="nov" type="number" value="326">kWh</label>
+	<label><span>December</span><input name="dec" type="number" value="682">kWh</label>
+
+</fieldset>
+
+
+<fieldset><legend>Sunshine Zone</legend>
+<figure><img src="images/sunshine_average_1971-2000_17.jpg" alt="zone map"></figure>
+<p>Please select which country you are in.</p>
+<select name="zone">
+	<option>England</option>
+	<option>Northern Ireland</option>
+	<option>Scotland</option>
+	<option>Wales</option>
+	<!--<option>Zone 5</option>
+	<option>Zone 6</option>-->
+</select>
+</fieldset>
+
+
+<fieldset><legend>Panel Choice</legend>
+    <figure><img src="images/solar-panel-house.jpg" alt="zone map"></figure>
+    
+<p>Please select a solar panel you would like to use.</p>
+<select name="panel">
+    
+	<option value="250">Axitec AC-250P/156-60S  </option>
+	<option value="275">Canadian Solar CS6K-275M   </option>
+	<option value="260">Hanwha Q.Pro BFR-G4.260  </option>
+</select>
+</fieldset>
+
+</form>
+
+<button onclick='calculateSolar()'>Calculate Solar Needs</button>
+<h2>Solar Reccomendation</h2>
+<div id="feedback"><p>Enter your information above to calculate your solar needs.</p></div>
+<br/>
+
+</main>
+<footer id="section-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="socail-link list-inline">
+                        
+						<li><a href="https://www.linkedin.com/in/fernando-brandao-170060151/"><i class="fab fa-linkedin"></i></a></li>
+                        
+						<li><a href="https://github.com/fwbrandao"><i class="fab fab fa-github"></i></a></li> 
+                        
+						<li><a href="http://brand.fernandobrandao.co.uk/#home"><i class="fab fa-blogger"></i></a></li>
+					</ul>
+					<h4>by Fernando Brandao</h4>
+
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+    
+<!--Scripts-->
+<script src="../Solarium/js/wow.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script> 
+        new WOW().init();
+    
+</script>
+</body>   
+</html>
